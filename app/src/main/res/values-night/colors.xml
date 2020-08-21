@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#44AF69</color>
+    <color name="colorPrimaryDark">#FCAB10</color>
+    <color name="colorAccent">#2B9EB3</color>
+
+    <color name="dutchWhite">#000000</color>
+    <color name="blueMunshell">#2B9EB3</color>
+    <color name="lightBlack">#131313</color>
+    <color name="darkBlack">#FFFFFF</color>
+    <color name="white">#000</color>
+
+</resources>

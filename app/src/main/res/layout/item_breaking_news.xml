@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ibnRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/white"
+    android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/outline_rect"
+        >
+    <ImageView
+        android:id="@+id/ibnImageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <TextView
+        android:id="@+id/ibnTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibnImageView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/darkBlack"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/ibnDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibnTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/ibnPublishAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibnDesc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_margin="10dp"
+        />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

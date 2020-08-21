@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/breakingNewsFragment">
+
+    <fragment
+        android:id="@+id/breakingNewsFragment"
+        android:name="samples.droidproject.newsstories.ui.BreakingNewsFragment"
+        android:label="fragment_breaking_news"
+        tools:layout="@layout/fragment_breaking_news" >
+        <action
+            android:id="@+id/action_breakingNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_breakingNewsFragment_to_articleFragment2"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_breakingNewsFragment_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="samples.droidproject.newsstories.ui.SavedNewsFragment"
+        android:label="fragment_saved_news"
+        tools:layout="@layout/fragment_saved_news" >
+        <action
+            android:id="@+id/action_savedNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_savedNewsFragment_to_articleFragment2"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_savedNewsFragment_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchNewsFragment"
+        android:name="samples.droidproject.newsstories.ui.SearchNewsFragment"
+        android:label="fragment_search_news"
+        tools:layout="@layout/fragment_search_news" >
+        <action
+            android:id="@+id/action_searchNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_searchNewsFragment_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="samples.droidproject.newsstories.ui.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" >
+        <argument
+            android:name="article"
+            app:argType="samples.droidproject.newsstories.models.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting"
+        android:name="samples.droidproject.newsstories.ui.Setting"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
